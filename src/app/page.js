@@ -15,9 +15,15 @@ export default function Home() {
 		<div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
 			<main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
 				<div className="mb-3">
-					<h2 className="text-lg font-bold text-center mb-2">
+					<h2 className="text-lg font-bold text-left mb-2">
 						Navigate using "Link"
 					</h2>
+					<Link
+						className="mr-3 border-black border-[2px] p-1 rounded-md"
+						href={"user"}
+					>
+						Go to User-Profile page
+					</Link>
 					<Link
 						className="mr-3 border-black border-[2px] p-1 rounded-md"
 						href={"contact-us"}
@@ -33,7 +39,7 @@ export default function Home() {
 				</div>
 				<div className="h-0 w-full border-black border-[1px]"></div>
 				<div>
-					<h2 className="text-lg font-bold text-center my-2">
+					<h2 className="text-lg font-bold text-left my-2">
 						Navigate using "useRouter"
 					</h2>
 					<button
