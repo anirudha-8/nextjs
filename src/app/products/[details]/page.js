@@ -1,6 +1,6 @@
-import React from "react";
+const ProductDetails = ({ params }) => {
+	console.log(params);
 
-const ProductDetails = () => {
 	return (
 		<div>
 			<h1>This is Product details Page</h1>
